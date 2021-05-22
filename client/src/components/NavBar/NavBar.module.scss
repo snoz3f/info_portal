@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.header_container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #e57373;
+  height: 70px;
+  box-shadow: 2px 3px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.menu__container {
+  display: flex;
+  align-items: center;
+}
+
+.menu__button {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  background: url("./../../assets/icons/menu_icon.svg") no-repeat center;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  &:hover{
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+.menu__header {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.auth__btns {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.login__btn{
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  background-color: inherit;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+.signup__btn {
+  border: 1px solid rgba(25, 118, 210, 0.4);
+  padding: 0;
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  background-color: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0 0 0 1.2px rgb(25, 118, 210);
+    background-color: rgba(25, 118, 210, 0.2);
+    transition: all .3s ease-in-out;
+  }
+}
